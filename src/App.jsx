@@ -31,7 +31,6 @@ const App = () => {
   return (
     <div>
       <Router>
-      <Navbar></Navbar>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/appointment" element={<Appointment/>}/>
@@ -39,8 +38,6 @@ const App = () => {
           <Route path="/login" element={<Loginpage/>}/>
           <Route path="/register" element={<Register/>}/>
         </Routes>
-        <Footer/>
-        <ToastContainer position="top-center"/>
       </Router>
     </div>
   );
