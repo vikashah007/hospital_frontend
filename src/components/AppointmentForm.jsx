@@ -39,7 +39,7 @@ const navigateTo=useNavigate()
   useEffect(() => {
     const fetchDoctors = async () => {
       const { data } = await axios.get(
-        "https://hospital-management-backend-dut4.onrender.com/api/v1/user/doctors",
+        "http://localhost:4000/api/v1/user/doctors",
         { withCredentials: true }
       );
       setDoctors(data.doctors);
@@ -53,7 +53,7 @@ const navigateTo=useNavigate()
     try {
         const hasVisitedBool = Boolean(hasVisited);
         const { data } = await axios.post(
-          "https://hospital-management-backend-dut4.onrender.com/api/v1/appointment/post",
+          "http://localhost:4000/api/v1/appointment/post",
           {
             firstname,
             lastname,
