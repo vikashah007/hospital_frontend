@@ -35,9 +35,9 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/appointment" element={<Appointment/>}/>
-          <Route path="about" element={<AboutUs/>}/>
-          <Route path="login" element={<Loginpage/>}/>
-          <Route path="register" element={<Register/>}/>
+          <Route path="/about" element={<AboutUs/>}/>
+          <Route path="/login" element={<Loginpage/>}/>
+          <Route path="/register" element={<Register/>}/>
         </Routes>
         <Footer/>
         <ToastContainer position="top-center"/>
